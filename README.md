@@ -22,6 +22,8 @@ This repository provides Terraform configuration for creating a complete AWS VPC
 - `vpc_cidr`: VPC CIDR block (default: 10.0.0.0/16)
 - `private_subnets`: Map of private subnet names and their number
 - `public_subnets`: Map of public subnet names and their number
+- `aws_access_key_id`: *(optional)* AWS access key. Defaults to the `AWS_ACCESS_KEY_ID` environment variable if unset.
+- `aws_secret_access_key`: *(optional)* AWS secret key. Defaults to the `AWS_SECRET_ACCESS_KEY` environment variable if unset.
 
 ## Outputs
 
@@ -50,6 +52,6 @@ terraform apply
 
 ## Requirements
 
-- Terraform >= 0.12
+- Terraform >= 1.12
 - AWS Provider
 - AWS credentials configured

@@ -70,3 +70,17 @@ variable "internet_gateway_tags" {
     Name = "igw"
   }
 }
+
+variable "aws_access_key_id" {
+  description = "AWS access key used for authentication"
+  type        = string
+  default     = null
+  sensitive   = true
+}
+
+variable "aws_secret_access_key" {
+  description = "AWS secret key used for authentication"
+  type        = string
+  default     = null
+  sensitive   = true
+}
