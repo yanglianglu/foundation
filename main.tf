@@ -5,7 +5,7 @@ data "aws_region" "current" {}
 # Define the VPC
 resource "aws_vpc" "vpc" {
   cidr_block = var.vpc_cidr
-  tags = var.vpc_tags
+  tags       = var.vpc_tags
 }
 
 # Deploy the private subnets
