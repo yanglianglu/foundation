@@ -5,7 +5,7 @@ output "vpc_id" {
 
 output "vpc_information" {
   description = "VPC Information about Environment"
-  value       = "Your ${aws_vpc.vpc.tags.Environment} VPC has an ID of ${aws_vpc.vpc.id}"
+  value       = "Your ${var.vpc_name} VPC has an ID of ${aws_vpc.vpc.id}"
 }
 
 output "vpc_cidr_block" {
