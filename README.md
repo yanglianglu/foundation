@@ -34,7 +34,12 @@ This repository provides Terraform configuration for creating a complete AWS VPC
 ## Usage
 
 1. Clone the repository
-2. Configure AWS credentials
+2. Configure AWS credentials using environment variables or an AWS credentials file. Do **not** add credentials to `terraform.tfvars`, otherwise Terraform will warn about undefined variables.
+   Example:
+   ```bash
+   export AWS_ACCESS_KEY_ID=your-access-key
+   export AWS_SECRET_ACCESS_KEY=your-secret-key
+   ```
 3. Modify variables in `variables.tf` if needed
 4. Run:
 ```bash
